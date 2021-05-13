@@ -24,6 +24,8 @@ function userDropDown(){
 }
 
 function loginFormUi(){
+    const inputsFields = document.querySelectorAll(".form-group input ")
+    console.log(inputsFields)
     const userName = document.querySelector('#username');
     const password =document.querySelector('#password');
     if(userName !== null && password !== null) {

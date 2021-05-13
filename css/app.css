@@ -200,10 +200,10 @@ html {
     -o-transition: opacity .5s ease-in-out;
     display: none; }
   .login-form .slider .statge .slider-items {
-    padding-top: 8.4rem;
-    padding-left: 9.6rem; }
+    padding-top: 8.1rem;
+    padding-left: 14.2rem; }
     .login-form .slider .statge .slider-items img {
-      width: 20.5rem;
+      width: 23.5rem;
       height: auto;
       top: 8.4rem;
       right: 2.1rem;
@@ -216,7 +216,7 @@ html {
   margin: 0 auto; }
   @media (max-width: 567px) {
     .holder {
-      width: 98%; } }
+      width: 95%; } }
 
 .size-fix {
   padding: 5rem 0; }

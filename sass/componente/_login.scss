@@ -18,7 +18,6 @@
                 @media (min-width:567px) {
                     padding:0 2.8rem !important;
                 }
-                
                 & .form-group {
                     margin-bottom:1rem ;
                     & input{
@@ -56,10 +55,10 @@
     & .slider{
         & .statge{
             & .slider-items{
-                padding-top: 8.4rem;
-                padding-left: 9.6rem;
+                padding-top: 8.1rem;
+                padding-left: 14.2rem;
                 & img{
-                    width: 20.5rem;
+                    width: 23.5rem;
                     height: auto;
                     top: 8.4rem;
                     right: 2.1rem;
@@ -79,7 +78,7 @@
     width: 90%;
     margin: 0 auto;
     @media(max-width:567px){
-        width: 98%;
+        width: 95%;
 
     }
 }
