@@ -25,18 +25,15 @@ function userDropDown(){
 
 function loginFormUi(){
     const inputsFields = document.querySelectorAll(".form-group input ")
-    console.log(inputsFields)
-    const userName = document.querySelector('#username');
-    const password =document.querySelector('#password');
-    if(userName !== null && password !== null) {
-            userName.addEventListener('focus',() => {
-            userName.setAttribute("placeholder","")})
-        userName.addEventListener("blur",()=>{
-            userName.setAttribute("placeholder",userName.getAttribute('data-target'))})
-        password.addEventListener('focus',() => {
-            password.setAttribute("placeholder","")})
-        password.addEventListener("blur",()=>{
-            password.setAttribute("placeholder",password.getAttribute('data-target'))})
+    if( inputsFields !== null) {
+        inputsFields.forEach((ele)=>{
+            ele.addEventListener('focus',() => {
+                ele.setAttribute("placeholder","")})
+        })
+        inputsFields.forEach((ele)=>{
+            ele.addEventListener("blur",()=>{
+                ele.setAttribute("placeholder",ele.getAttribute('data-target'))})
+        })
     }
 }
 
