@@ -1,0 +1,77 @@
+.profile-info{
+    padding: 5rem 0;
+    & .profile-img{
+        width: 50%;
+        margin: auto;
+    }
+    & .profile-prag{
+        padding:0 2rem;
+        
+        & .uper{
+           padding:2.5rem 0 ;
+            & h3{
+                font-size: 2.4rem;
+                font-weight: bold;
+                @media(max-width: 332px){
+                    font-size: 1.9rem;
+                }
+                margin: 0;
+                
+                &::after{
+                    content: "|";
+                    font-size: 2.4rem ;
+                    color: rgba($color-font, .3 );
+                    margin : 0 .8rem ;
+                }
+            }
+            & a{
+                @media(max-width: 332px){
+                    font-size: .9rem;
+                }
+                font-size: 1.5rem;
+            }
+        }
+        & .midel{
+            padding-bottom:2.5rem ;
+            font-size: 1.4rem;
+        }
+        & .lower{
+            font-size: 1.8rem;
+
+
+        }
+
+        
+    }
+}
+.filter{
+    border-top:.1rem solid rgba(0, 0, 0,.3) ;
+    & li{
+        padding: 1rem 0;
+        & a{
+            text-decoration: none;
+            color: $color-font;
+            font-size: 1.8rem;
+            @media(max-width: 500px){
+                font-size: 1rem;
+
+            }
+        }
+        &:hover{
+            @extend%sec-color;
+            border-top:.1rem solid black ;
+            margin-top:-.1rem ;
+            
+        }
+    }
+}
+.galary{
+    grid-template-columns: repeat(3 , auto) ;
+    gap: 2.5rem;
+    @media(max-width: 960px){
+        grid-template-columns: repeat(1 , auto);
+        gap: 1.5rem;
+    }
+    
+    
+}
