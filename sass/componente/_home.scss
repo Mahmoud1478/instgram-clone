@@ -1,0 +1,14 @@
+.post{
+    padding: .5rem;
+    & .post_details{
+        & a{
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        & p{
+            font-size: 1.6rem;
+
+        }
+
+    }
+}

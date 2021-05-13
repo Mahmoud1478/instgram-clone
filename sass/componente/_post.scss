@@ -1,0 +1,14 @@
+#post{
+    height: 100vh;
+}
+.posts_details{
+    & .user{
+        & span{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    & p{
+        margin-top: 3rem;
+    }
+}   

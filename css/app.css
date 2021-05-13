@@ -220,3 +220,21 @@ html {
 
 .size-fix {
   padding: 5rem 0; }
+
+.post {
+  padding: .5rem; }
+  .post .post_details a {
+    font-weight: bold;
+    font-size: 1.8rem; }
+  .post .post_details p {
+    font-size: 1.6rem; }
+
+#post {
+  height: 100vh; }
+
+.posts_details .user span {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.posts_details p {
+  margin-top: 3rem; }

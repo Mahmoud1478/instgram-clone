@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', ()=> {
     userDropDown()
     loginFormUi()
     loginSlider(5000)
+
 })
 
 
@@ -9,15 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // functions
 function userDropDown(){
+    
     const userBtn = document.querySelector("#dropdown");
     if (userBtn !== null){
-        userBtn.addEventListener("click",function(){
+        userBtn.addEventListener("click",function(e){
+            e.preventDefault()
             ele = document.querySelector("#setting")
             if (ele.classList.contains('active')){
                 ele.classList.remove("active")
             }else{
                 ele.classList.add("active")
-                //downToUP(ele , 2000)
             }
         })
     }
@@ -67,7 +69,6 @@ function fadeOut(element, ms){
     },time * (ms/1000))
 };
 
-
 function loginSlider(ms){
     if( document.querySelector('#slider') !==null){
         let sliderImages = Array.from(document.querySelectorAll('.slider-items img'))
@@ -85,35 +86,11 @@ function loginSlider(ms){
     }
 }
 
-function upToDown(ele,ms){
-    ele.style.display = "block"
-    ele.style.height = 1 + "%"
-    
-    const intervalID = setInterval(()=>{
-        if(Number(ele.style.height.split("%")[0]) < 100){
-            ele.style.height =Number(ele.style.height.split("%")[0]) + 1  + "%"
-        } 
-        else{
-            clearInterval(intervalID)
-            ele.style.height = ""
-        }
-    },10*(ms/1000))
+function setCss(element,style){
+    Object.entries(style).forEach((prop)=>{
+        element.style.setProperty(prop[0],prop[1])
+    })
 }
-function downToUP(ele,ms){
-    ele.style.height = 100 + "%"
-    const intervalID = setInterval(()=>{
-        
-        if(Number(ele.style.height.split("%")[0]) > 0){
-            ele.style.height =Number(ele.style.height.split("%")[0]) - 1  + "%"
-        }
-        else{
-            clearInterval(intervalID)
-            ele.style.height = ""
-            ele.style.display = "none"
-        }
-    },10*(ms/1000))
-}
-
 
 
 
