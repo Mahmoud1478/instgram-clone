@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
         path = window.location.pathname
         page = null
         constructor(){
-            console.log(window.location);
             this.userBtn()
             if(this.path ==="/login.html"){
                 this.page = new Login()
@@ -26,9 +25,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
         userBtn = ()=>{
             const btns = Array.from(document.querySelectorAll(".dropdown_item a"))
-            btns[0].setAttribute("href","https://" + window.location.hostname + "/profile.html")
-            btns[1].setAttribute("href","https://" + window.location.hostname + "/post.html")
-            btns[2].setAttribute("href","https://" + window.location.hostname + "index.html")
+            btns[0].setAttribute("href","profile.html")
+            btns[1].setAttribute("href","post.html")
+            btns[2].setAttribute("href","index.html")
             userDropDown()
         }
     } 
