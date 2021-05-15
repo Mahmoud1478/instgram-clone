@@ -182,11 +182,13 @@ html {
     margin-bottom: 1rem; }
     .login-form .card .holder .card-body .form-group input {
       font-size: 1.2rem;
-      padding: .5rem .5rem; }
+      padding: .5rem .5rem;
+      height: 4rem; }
       .login-form .card .holder .card-body .form-group input:not(:last-of-type) {
         margin-bottom: .5rem; }
-    .login-form .card .holder .card-body .form-group button {
-      font-size: 2rem !important; }
+  .login-form .card .holder .card-body button {
+    font-size: 2rem !important;
+    height: 4rem; }
   .login-form .regster-requst {
     padding: 2rem 0;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -200,14 +202,28 @@ html {
     -o-transition: opacity .5s ease-in-out;
     display: none; }
   .login-form .slider .statge .slider-items {
-    padding-top: 8.1rem;
+    padding-top: 9.9rem;
     padding-left: 14.2rem; }
+    @media (max-width: 1399px) {
+      .login-form .slider .statge .slider-items {
+        padding-top: 9.5rem;
+        padding-left: 11.5rem; } }
+    @media (max-width: 1200px) {
+      .login-form .slider .statge .slider-items {
+        padding-top: 9.1rem;
+        padding-left: 8.8rem; } }
     .login-form .slider .statge .slider-items img {
       width: 23.5rem;
       height: auto;
       top: 8.4rem;
       right: 2.1rem;
       display: none; }
+      @media (max-width: 1399px) {
+        .login-form .slider .statge .slider-items img {
+          width: 22.5rem; } }
+      @media (max-width: 1200px) {
+        .login-form .slider .statge .slider-items img {
+          width: 21.5rem; } }
       .login-form .slider .statge .slider-items img:first-of-type {
         display: block; }
 

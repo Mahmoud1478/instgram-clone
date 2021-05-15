@@ -24,13 +24,16 @@
                         font-size: 1.2rem;
                         @extend%main-color;
                         padding: .5rem .5rem;
+                        height: 4rem;
                         &:not(:last-of-type){
                             margin-bottom: .5rem;
                         }
                     }
-                    & button{
-                        font-size: 2rem !important;
-                    }
+                    
+                }
+                & button{
+                    font-size: 2rem !important;
+                    height: 4rem
                 }
             }
         }
@@ -55,14 +58,28 @@
     & .slider{
         & .statge{
             & .slider-items{
-                padding-top: 8.1rem;
+                padding-top: 9.9rem;
                 padding-left: 14.2rem;
+                @media (max-width:1399px) {
+                    padding-top: 9.5rem;
+                    padding-left: 11.5rem;
+                }
+                @media (max-width:1200px) {
+                    padding-top: 9.1rem;
+                    padding-left: 8.8rem;
+                }
                 & img{
                     width: 23.5rem;
                     height: auto;
                     top: 8.4rem;
                     right: 2.1rem;
                     display: none;
+                    @media (max-width:1399px) {
+                        width: 22.5rem;
+                    }
+                    @media (max-width:1200px) {
+                        width: 21.5rem;
+                    }
                     
                     &:first-of-type{
                         display: block;
@@ -73,7 +90,7 @@
             }
         }
     }
-}
+} 
 .holder{
     width: 90%;
     margin: 0 auto;
