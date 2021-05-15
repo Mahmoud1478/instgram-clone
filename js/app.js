@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
         userBtn = ()=>{
             const btns = Array.from(document.querySelectorAll(".dropdown_item a"))
-            btns[0].setAttribute("href","/profile.html")
-            btns[1].setAttribute("href","/post.html")
+            btns[0].setAttribute("href","profile.html")
+            btns[1].setAttribute("href","post.html")
             btns[2].setAttribute("href","index.html")
             userDropDown()
         }
